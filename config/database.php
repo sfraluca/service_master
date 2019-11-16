@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,6 +52,15 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+        ],
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => 'localhost',
+            'port' => 27017,
+            'database' => 'carservice',
+            'username' => '',
+            'password' => '',
         ],
 
         'pgsql' => [
